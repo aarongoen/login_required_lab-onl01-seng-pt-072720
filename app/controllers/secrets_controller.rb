@@ -3,7 +3,7 @@ class SecretsController < ApplicationController
 
     def show
         if logged_in?
-            render :secret
+            "/show"
         else redirect_to '/login' 
         end
     end
